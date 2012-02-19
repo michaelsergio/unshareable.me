@@ -10,6 +10,7 @@ import java.util.Set;
 public class Game {
 	public static Map<String, List<String>> questionsMap;
 	
+	private Game() {} 
 	static {
 		if (questionsMap == null) {
 			// Generate Question Map
@@ -43,15 +44,10 @@ public class Game {
 		
 	}
 	
-	public static List<Question> getAllQuestions() {
-		Question q = new Question();
-		q.questionAsked = "hi";
-		q.questionId = -27;
-		Question q1 = new Question();
-		q1.questionAsked = "bye";
-		q1.questionId = -28;
-		LinkedList<Question> ll = new LinkedList<Question>();
-		ll.add(q);
+	public static List<String> getAllQuestions() {
+		LinkedList<String> ll = new LinkedList<String>();
+		ll.add("hi");
+		ll.add("bye");
 		return ll;
 	}
 	

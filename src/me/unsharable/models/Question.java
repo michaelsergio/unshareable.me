@@ -11,5 +11,9 @@ public class Question {
 		return null;
 	}
 	
+	@Override
+	public String toString() {
+		return questionAsked;
+	}
 
 }

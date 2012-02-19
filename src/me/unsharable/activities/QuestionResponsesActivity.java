@@ -65,11 +65,7 @@ public class QuestionResponsesActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.question_response);
 
-		List<Question> questions = Game.getAllQuestions();
-		ListView lv = (ListView) findViewById(R.id.questionList);
-		ArrayAdapter<Question> questionAdapter = 
-				new ArrayAdapter<Question>(this, android.R.layout.simple_list_item_1, questions);
-		lv.setAdapter(questionAdapter);
+
 	}
 	
 	/** TODO

@@ -31,6 +31,7 @@ public class DashboardActivity extends Activity {
 				startActivity(i);
 			}
 		});
+				
 	}
 	
 }
