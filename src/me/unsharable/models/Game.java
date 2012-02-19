@@ -21,8 +21,17 @@ public class Game {
 	}
 	
 	
-	public List<Question> getAllQuestions() {
-		return null;
+	public static List<Question> getAllQuestions() {
+		Question q = new Question();
+		q.questionAsked = "hi";
+		q.ql
+		luestionId = -27;
+		Question q1 = new Question();
+		q1.questionAsked = "bye";
+		q1.questionId = -28cd;
+		LinkedList<Question> ll = new LinkedList<Question>();
+		ll.add(q);
+		return ll;
 	}
 	
 	public void askQuestion(String question) {

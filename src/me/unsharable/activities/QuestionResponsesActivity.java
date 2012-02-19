@@ -1,18 +1,25 @@
 package me.unsharable.activities;
 
+import java.util.List;
+
+import me.unsharable.models.Game;
+import me.unsharable.models.Question;
 import me.unshareable.R;
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class QuestionResponsesActivity extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.question_responses);
-/*		
+
+		List<Question> questions = Game.getAllQuestions();
 		ListView lv = (ListView) findViewById(R.id.questionList);
-		ArrayAdapter<Question> questions = 
-				new ListAdapter<Question>(this, android.R.layout.simple_list_item_1);
-		lv.setAdapter(questions);
-*/	}
+		ArrayAdapter<Question> questionAdapter = 
+				new ArrayAdapter<Question>(this, android.R.layout.simple_list_item_1, questions);
+		lv.setAdapter(questionAdapter);
+	}
 }
