@@ -27,7 +27,7 @@ public class Game {
 		q.questionId = -27;
 		Question q1 = new Question();
 		q1.questionAsked = "bye";
-		q1.questionId = -28cd;
+		q1.questionId = -28;
 		LinkedList<Question> ll = new LinkedList<Question>();
 		ll.add(q);
 		return ll;
