@@ -17,11 +17,29 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
+            android:id="@+id/dashboard_ask"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="+" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer Questions"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/dashboard_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+" />
     </LinearLayout>
 
 </LinearLayout>
