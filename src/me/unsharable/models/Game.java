@@ -24,8 +24,7 @@ public class Game {
 	public static List<Question> getAllQuestions() {
 		Question q = new Question();
 		q.questionAsked = "hi";
-		q.ql
-		luestionId = -27;
+		q.questionId = -27;
 		Question q1 = new Question();
 		q1.questionAsked = "bye";
 		q1.questionId = -28cd;
