@@ -22,9 +22,10 @@ public final class R {
         public static final int dashboard_answer=0x7f05000a;
         public static final int dashboard_ask=0x7f050007;
         public static final int editText1=0x7f050005;
+        public static final int gallery=0x7f05000b;
         public static final int linearLayout1=0x7f050000;
         public static final int linearLayout2=0x7f050004;
-        public static final int questionList=0x7f05000b;
+        public static final int questionList=0x7f05000c;
         public static final int textView1=0x7f050003;
     }
     public static final class layout {
@@ -34,10 +35,32 @@ public final class R {
         public static final int facebook_login=0x7f030003;
         public static final int fullscreen_question_response=0x7f030004;
         public static final int main=0x7f030005;
-        public static final int question_response=0x7f030006;
+        public static final int person_response=0x7f030006;
+        public static final int question_response=0x7f030007;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
         public static final int hello=0x7f040000;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a UnsharableMe.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #UnsharableMe_android_galleryItemBackground me.unshareable:android_galleryItemBackground}</code></td><td></td></tr>
+           </table>
+           @see #UnsharableMe_android_galleryItemBackground
+         */
+        public static final int[] UnsharableMe = {
+            0x0101004c
+        };
+        /**
+          <p>This symbol is the offset where the {@link me.unshareable.R.attr#android_galleryItemBackground}
+          attribute's value can be found in the {@link #UnsharableMe} array.
+          @attr name android:android_galleryItemBackground
+        */
+        public static final int UnsharableMe_android_galleryItemBackground = 0;
+    };
 }
