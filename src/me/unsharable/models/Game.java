@@ -4,11 +4,13 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
+import java.util.Set;
 
 public class Game {
 	public static Map<String, List<String>> questionsMap;
 	
-	public Game() {
+	static {
 		if (questionsMap == null) {
 			// Generate Question Map
 			questionsMap = new HashMap<String, List<String>>();
@@ -20,6 +22,26 @@ public class Game {
 		}
 	}
 	
+	public static String getRandomQuestion() {
+		// This methods really inefficent, fix later. -ms
+		Set<String> keys = questionsMap.keySet();
+		
+		int size = keys.size();
+		int item = new Random().nextInt(size); // In real life, the Random object should be rather more shared than this
+		int i = 0;
+		String str = null;
+		for(String obj : keys)
+		{
+			if (i == item) {
+				str = obj;
+				break;
+			}
+			i = i + 1;
+		}
+		List<String> questions = questionsMap.get(str);
+		return questions.get(new Random().nextInt(size));
+		
+	}
 	
 	public static List<Question> getAllQuestions() {
 		Question q = new Question();
@@ -33,7 +55,7 @@ public class Game {
 		return ll;
 	}
 	
-	public void askQuestion(String question) {
+	public static void askQuestion(String question) {
 		
 	}
 }
