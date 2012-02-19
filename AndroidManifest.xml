@@ -18,6 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity android:name="me.unsharable.activities.FullscreenQuestionResponseActivity"></activity>
+        <activity android:name="me.unsharable.activities.AskQuestionActivity"></activity>
+        <activity android:name="me.unsharable.activities.QuestionResponsesActivity"></activity>
+        <activity android:name="me.unsharable.activities.CategoryListActivity"></activity>
+        <activity android:name="me.unsharable.activities.DashboardActivity"></activity>
+        <activity android:name="me.unsharable.activities.FacebookLoginActivity"></activity>
+        </application>
 
 </manifest>
