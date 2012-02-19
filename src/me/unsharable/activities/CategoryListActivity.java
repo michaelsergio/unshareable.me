@@ -1,7 +1,6 @@
 package me.unsharable.activities;
 
-import com.michaelsergio.applestoandroid.R;
-
+import me.unshareable.R;
 import android.app.Activity;
 import android.os.Bundle;
 
