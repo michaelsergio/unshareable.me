@@ -64,7 +64,7 @@ public class QuestionResponsesActivity extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.question_responses);
+		setContentView(R.layout.question_response);
 
 		List<Question> questions = Game.getAllQuestions();
 		ListView lv = (ListView) findViewById(R.id.questionList);
