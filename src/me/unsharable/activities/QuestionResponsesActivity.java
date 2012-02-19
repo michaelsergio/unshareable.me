@@ -42,15 +42,14 @@ public class QuestionResponsesActivity extends Activity{
 	        if (resultCode == Activity.RESULT_OK) {
 	            Uri selectedImage = imageUri;
 	            getContentResolver().notifyChange(selectedImage, null);
-	            ImageView imageView = (ImageView) findViewById(R.id.myimgview); //view to upload
 	            ContentResolver cr = getContentResolver();
 	            Bitmap bitmap;
 	            try {
 	                 bitmap = android.provider.MediaStore.Images.Media
 	                 .getBitmap(cr, selectedImage);
 
-	                imageView.setImageBitmap(bitmap);
-	                Toast.makeText(this, selectedImage.toString(),
+	                sendToFacebook(bitmap);
+	                Toast.makeText(this, "Reponse submitted",
 	                        Toast.LENGTH_LONG).show();
 	            } catch (Exception e) {
 	                Toast.makeText(this, "Failed to load", Toast.LENGTH_SHORT)
@@ -71,5 +70,13 @@ public class QuestionResponsesActivity extends Activity{
 		ArrayAdapter<Question> questionAdapter = 
 				new ArrayAdapter<Question>(this, android.R.layout.simple_list_item_1, questions);
 		lv.setAdapter(questionAdapter);
+	}
+	
+	/** TODO
+	 * Uploads the picture to facebook
+	 * @param bitmap: image to send
+	 */
+	public void sendToFacebook(Bitmap bitmap) {
+		
 	}
 }
