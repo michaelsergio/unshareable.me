@@ -29,6 +29,7 @@ public final class R {
         public static final int custom_question_post=0x7f050006;
         public static final int dashboard_answer=0x7f05000b;
         public static final int dashboard_ask=0x7f050008;
+        public static final int gallery=0x7f05000f;
         public static final int linearLayout1=0x7f050000;
         public static final int linearLayout2=0x7f050004;
         public static final int login=0x7f05000e;
@@ -44,7 +45,8 @@ public final class R {
         public static final int dashboard=0x7f030002;
         public static final int facebook_login=0x7f030003;
         public static final int fullscreen_question_response=0x7f030004;
-        public static final int question_response=0x7f030005;
+        public static final int person_response=0x7f030005;
+        public static final int question_response=0x7f030006;
     }
     public static final class string {
         public static final int Graph_FQL_msg=0x7f040024;
